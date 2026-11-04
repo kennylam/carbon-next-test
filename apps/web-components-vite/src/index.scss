@@ -1,0 +1,20 @@
+@use '@carbon/styles/scss/reset';
+@use '@carbon/styles/scss/theme';
+@use '@carbon/styles/scss/themes';
+@use '@carbon/styles/scss/fonts';
+
+:root {
+  @include theme.theme(themes.$white);
+}
+
+body {
+  background: theme.$background;
+  color: theme.$text-primary;
+}
+
+.page {
+  display: grid;
+  gap: 1rem;
+  max-inline-size: 40rem;
+  padding: 4rem 1rem;
+}

@@ -1,0 +1,5 @@
+// Next.js (Turbopack) cannot resolve the default `~@ibm/plex` font URLs, which
+// is also true for v11, so fonts load from the IBM CDN instead.
+@use '@carbon/react' with (
+  $use-akamai-cdn: true
+);

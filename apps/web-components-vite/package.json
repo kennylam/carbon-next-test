@@ -1,0 +1,19 @@
+{
+  "name": "@carbon-next-test/web-components-vite",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4103 --strictPort"
+  },
+  "dependencies": {
+    "@carbon/icons": "catalog:",
+    "@carbon/styles": "catalog:",
+    "@carbon/web-components": "catalog:"
+  },
+  "devDependencies": {
+    "sass": "^1.93.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.12"
+  }
+}

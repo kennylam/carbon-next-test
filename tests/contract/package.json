@@ -1,0 +1,42 @@
+{
+  "name": "@carbon-next-test/contract",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@carbon/cli": "catalog:",
+    "@carbon/colors": "catalog:",
+    "@carbon/elements": "catalog:",
+    "@carbon/feature-flags": "catalog:",
+    "@carbon/grid": "catalog:",
+    "@carbon/icon-helpers": "catalog:",
+    "@carbon/icons": "catalog:",
+    "@carbon/icons-react": "catalog:",
+    "@carbon/icons-vue": "catalog:",
+    "@carbon/layout": "catalog:",
+    "@carbon/motion": "catalog:",
+    "@carbon/pictograms": "catalog:",
+    "@carbon/pictograms-react": "catalog:",
+    "@carbon/react": "catalog:",
+    "@carbon/styles": "catalog:",
+    "@carbon/themes": "catalog:",
+    "@carbon/type": "catalog:",
+    "@carbon/utilities": "catalog:",
+    "@carbon/utilities-react": "catalog:",
+    "@carbon/web-components": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-is": "catalog:",
+    "sass": "^1.93.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.6",
+    "publint": "^0.3.15",
+    "semver": "^7.7.3",
+    "tinyglobby": "^0.2.15",
+    "vitest": "^4.0.0"
+  }
+}

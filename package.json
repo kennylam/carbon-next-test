@@ -1,0 +1,31 @@
+{
+  "name": "carbon-next-test",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Tests the Carbon packages published from carbon-design-system/carbon's next branch the way consumers install and build them",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "yarn@4.10.3",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "apps/*",
+    "tests/*"
+  ],
+  "scripts": {
+    "use-carbon": "node scripts/use-carbon.mjs",
+    "build": "yarn workspaces foreach --all --parallel --include '@carbon-next-test/*' run build",
+    "test": "yarn test:contract && yarn build && yarn test:unit && yarn test:e2e",
+    "test:contract": "yarn workspace @carbon-next-test/contract test",
+    "test:unit": "yarn workspace @carbon-next-test/react-vite test",
+    "test:e2e": "yarn workspace @carbon-next-test/e2e test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "prettier": "prettier-config-carbon",
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-config-carbon": "^0.12.0"
+  }
+}

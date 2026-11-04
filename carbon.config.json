@@ -1,0 +1,32 @@
+{
+  "$comment": "Published packages from carbon-design-system/carbon. `dir` is the folder under packages/ upstream. `optional` packages are tested when the release includes them but do not fail resolution when missing. @carbon/upgrade is excluded until next publishes its v12 codemods; its version on next is still the v11 release. `nodeLoad: false` skips loading the package entry point in Node because it needs a browser.",
+  "repository": "carbon-design-system/carbon",
+  "releaseTagPrefix": "v12.",
+  "defaultTag": "v12-alpha",
+  "packages": [
+    { "name": "@carbon/cli", "dir": "cli" },
+    { "name": "@carbon/colors", "dir": "colors" },
+    { "name": "@carbon/elements", "dir": "elements" },
+    { "name": "@carbon/feature-flags", "dir": "feature-flags" },
+    { "name": "@carbon/grid", "dir": "grid" },
+    { "name": "@carbon/icon-helpers", "dir": "icon-helpers" },
+    { "name": "@carbon/icons", "dir": "icons" },
+    { "name": "@carbon/icons-react", "dir": "icons-react" },
+    { "name": "@carbon/icons-vue", "dir": "icons-vue" },
+    { "name": "@carbon/layout", "dir": "layout" },
+    { "name": "@carbon/motion", "dir": "motion" },
+    { "name": "@carbon/pictograms", "dir": "pictograms" },
+    { "name": "@carbon/pictograms-react", "dir": "pictograms-react" },
+    { "name": "@carbon/react", "dir": "react" },
+    { "name": "@carbon/styles", "dir": "styles" },
+    { "name": "@carbon/themes", "dir": "themes" },
+    { "name": "@carbon/type", "dir": "type" },
+    { "name": "@carbon/utilities", "dir": "utilities" },
+    { "name": "@carbon/utilities-react", "dir": "utilities-react" },
+    {
+      "name": "@carbon/web-components",
+      "dir": "web-components",
+      "nodeLoad": false
+    }
+  ]
+}

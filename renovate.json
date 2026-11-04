@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "description": "scripts/use-carbon.mjs controls Carbon and React versions through the Yarn catalog",
+      "matchPackageNames": [
+        "@carbon/**",
+        "react",
+        "react-dom",
+        "react-is",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "Batch tooling updates to keep noise down",
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "tooling"
+    }
+  ]
+}

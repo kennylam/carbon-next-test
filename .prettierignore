@@ -1,0 +1,11 @@
+.yarn/
+.cache/
+reports/
+dist/
+.next/
+test-results/
+playwright-report/
+carbon-tarballs/
+yarn.lock
+.yarnrc.yml
+carbon-release.json

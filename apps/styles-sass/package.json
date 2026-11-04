@@ -1,0 +1,22 @@
+{
+  "name": "@carbon-next-test/styles-sass",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@carbon/elements": "catalog:",
+    "@carbon/grid": "catalog:",
+    "@carbon/react": "catalog:",
+    "@carbon/styles": "catalog:",
+    "@carbon/themes": "catalog:",
+    "@carbon/type": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-is": "catalog:"
+  },
+  "devDependencies": {
+    "sass": "^1.93.0"
+  }
+}

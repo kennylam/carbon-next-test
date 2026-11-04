@@ -1,0 +1,24 @@
+name: Install release set
+description:
+  Applies the release set from the resolve job and installs dependencies
+inputs:
+  react:
+    description: React major version
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+      with:
+        name: release
+        path: .release
+    - name: Install
+      shell: bash
+      env:
+        # The catalog changes with every release set, so the lockfile does too.
+        YARN_ENABLE_IMMUTABLE_INSTALLS: 'false'
+      run: |
+        corepack enable
+        if [ -d .release/carbon-tarballs ]; then mv .release/carbon-tarballs carbon-tarballs; fi
+        node scripts/use-carbon.mjs --release .release/carbon-release.json --react ${{ inputs.react }}
+        yarn install

@@ -1,0 +1,20 @@
+node_modules/
+.yarn/*
+!.yarn/patches
+.pnp.*
+
+# Build output
+dist/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# Test output
+.cache/
+reports/
+test-results/
+playwright-report/
+
+# Unpublished packages downloaded by CI
+carbon-tarballs/
+.release/

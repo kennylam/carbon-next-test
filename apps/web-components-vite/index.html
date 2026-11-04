@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carbon next: Web Components + Vite</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <cds-header aria-label="Carbon next">
+      <cds-header-name href="#" prefix="Carbon">next</cds-header-name>
+    </cds-header>
+    <main class="page">
+      <cds-page-header>
+        <cds-page-header-content
+          title="Carbon next test app"></cds-page-header-content>
+      </cds-page-header>
+      <cds-tile data-testid="tile"
+        >Published packages render in a consumer app</cds-tile
+      >
+      <cds-button data-testid="primary-button" id="open-panel"
+        >Open side panel</cds-button
+      >
+      <cds-tag data-testid="tag" type="blue">v12</cds-tag>
+      <cds-toggle data-testid="toggle" label-text="Enable"></cds-toggle>
+      <cds-text-input label="Name"></cds-text-input>
+      <cds-number-input
+        label="Count"
+        min="0"
+        max="10"
+        value="1"></cds-number-input>
+      <cds-dropdown title-text="Dropdown" label="Choose">
+        <cds-dropdown-item value="one">One</cds-dropdown-item>
+        <cds-dropdown-item value="two">Two</cds-dropdown-item>
+      </cds-dropdown>
+      <cds-date-picker>
+        <cds-date-picker-input
+          kind="single"
+          label-text="Date"
+          placeholder="mm/dd/yyyy"></cds-date-picker-input>
+      </cds-date-picker>
+      <cds-overflow-menu label="Actions">
+        <cds-menu>
+          <cds-menu-item label="Edit"></cds-menu-item>
+          <cds-menu-item-divider></cds-menu-item-divider>
+          <cds-menu-item kind="danger" label="Delete"></cds-menu-item>
+        </cds-menu>
+      </cds-overflow-menu>
+      <cds-user-avatar
+        name="Carbon User"
+        tooltip-text="Carbon User"></cds-user-avatar>
+      <cds-inline-notification
+        kind="info"
+        title="Published build"
+        subtitle="Rendered from npm"></cds-inline-notification>
+      <cds-side-panel id="side-panel" title="Side panel" size="md">
+        Side panel content
+      </cds-side-panel>
+    </main>
+  </body>
+</html>
